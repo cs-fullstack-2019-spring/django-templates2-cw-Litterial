@@ -26,8 +26,8 @@
     {% for movie in movie_list %}
     <tr>
         <td>{{movie.movie_title}}</td>
-        <td><a href = "{% url 'details' movie.id %}">Click here for details</a></td>
-        <td><a href = "{% url 'synopsis' movie.id %}">Click here for the synopsis</a></td>
+        <td><a href = "{% url 'details' movie.movie_id %}">Click here for details</a></td>
+        <td><a href = "{% url 'synopsis' movie.movie_id %}">Click here for the synopsis</a></td>
     </tr>
     {% endfor %}
 </table>
